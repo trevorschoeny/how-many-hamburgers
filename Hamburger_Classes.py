@@ -11,7 +11,7 @@ class Order() :
     
     # Returns a random number between 1 and 20
     def randomBurgers(self) :
-        return random.randrange(1, 20, 1)
+        return random.randint(1, 20)
     
 class Person() :
     
