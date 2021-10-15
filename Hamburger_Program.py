@@ -5,7 +5,6 @@
 
 from Hamburger_Classes import Order, Person, Customer
 
-# queCustomers = []
 
 # The following are two dictionary scenarios. Both work and either can be used based on the needs of the project.
 
@@ -40,15 +39,8 @@ if oCust.customer_name in dictCustomers:
 
 else : dictCustomers[oCust.customer_name] = oCust.order.burger_count
 
-
-#------------------Demo----------------------------------------------------------------------
-
-# Below is a demonstration to show how the dictionary works. It shows the current 
-# record and then the updated record after adding 5 burgers
-
-print(oCust.customer_name,dictCustomers[oCust.customer_name])
-
-dictCustomers[oCust.customer_name] += 5
-
-print(oCust.customer_name,dictCustomers[oCust.customer_name])
-
+# QUEUE
+queueCustomers = []
+for iCount in range(0, 100) :
+    oCustomer = Customer()
+    queueCustomers.append(oCustomer)
