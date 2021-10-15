@@ -6,7 +6,6 @@
 from Hamburger_Classes import Order, Person, Customer
 
 queueCustomers = []
-print("Customers in line and their order:")
 for iCount in range(0, 100) :
     oCustomer = Customer()
     queueCustomers.append(oCustomer)
