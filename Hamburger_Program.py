@@ -6,5 +6,16 @@
 from Hamburger_Classes import Order, Person, Customer
 
 queCustomers = []
+
 dictCustomers = {}
+
+iNumCust = input("How many customers would you like to add? ")
+
+# for iCount in range(0, iNumCust) :
+
+sCustomer = input("Enter the customer name: ").upper()
+iBurgers = input("Enter the number of burgers: ")
+
+if sCustomer in dictCustomers :
+    dictCustomers[sCustomer].burger_count += iBurgers
 
