@@ -9,13 +9,19 @@ queCustomers = []
 
 dictCustomers = {}
 
-iNumCust = input("How many customers would you like to add? ")
+oCust = Customer()
 
-# for iCount in range(0, iNumCust) :
+if oCust.customer_name in dictCustomers:
 
-sCustomer = input("Enter the customer name: ").upper()
-iBurgers = input("Enter the number of burgers: ")
+    # Search the dictionary to see if the customer already has an existing key. 
+    # If so, add the burger count from their order to their total burgers value.
 
-if sCustomer in dictCustomers :
-    dictCustomers[sCustomer].burger_count += iBurgers
+    dictCustomers[oCust.customer_name] += oCust.order.burger_count
+
+    # If they don't have an existing key, create one using their name and add
+    # their burger count as a start to their total burgers value.
+
+else : dictCustomers[oCust.customer_name : oCust.order.burger_count]
+
+print(dictCustomers["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swoardsman", "Singing Bush"]) 
 
