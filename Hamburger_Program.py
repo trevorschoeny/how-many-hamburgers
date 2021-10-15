@@ -7,9 +7,24 @@ from Hamburger_Classes import Order, Person, Customer
 
 # queCustomers = []
 
-dictCustomers = {}
+# The following are two dictionary scenarios. Both work and either can be used based on the needs of the project.
 
-# Create new customer object (this may not need to be used in the final program, I just added it for demo purposes)
+#------------------1. Dictionary where all Customer keys are already created----------------------------------------------------------------------
+
+
+dictCustomers = {"Jefe" : 0, "El Guapo" : 0, "Lucky Day" : 0, "Ned Nederlander" : 0, "Dusty Bottoms" : 0, "Harry Flugleman" : 0, "Carmen" : 0, "Invisible Swoardsman" : 0, "Singing Bush" : 0}
+
+oCust = Customer()
+
+# Add the burger count from their order to their total burgers value
+
+dictCustomers[oCust.customer_name] += oCust.order.burger_count
+
+
+#------------------2. Empty Dictionary where Customers need to be added still----------------------------------------------------------------------
+
+
+dictCustomers = {}
 
 oCust = Customer()
 
@@ -24,6 +39,9 @@ if oCust.customer_name in dictCustomers:
     # their burger count as a start to their total burgers value.
 
 else : dictCustomers[oCust.customer_name] = oCust.order.burger_count
+
+
+#------------------Demo----------------------------------------------------------------------
 
 # Below is a demonstration to show how the dictionary works. It shows the current 
 # record and then the updated record after adding 5 burgers
