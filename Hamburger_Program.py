@@ -16,7 +16,7 @@ dictCustomers = {"Jefe" : 0, "El Guapo" : 0, "Lucky Day" : 0, "Ned Nederlander" 
 
 oCust = Customer()
 
-# Add the burger count from their order to their total burgers value
+# Add the burger count from their order to their total burgers dictionary value
 
 dictCustomers[oCust.customer_name] += oCust.order.burger_count
 
