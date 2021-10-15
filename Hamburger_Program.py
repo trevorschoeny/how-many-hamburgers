@@ -5,6 +5,11 @@
 
 from Hamburger_Classes import Order, Person, Customer
 
-queCustomers = []
-dictCustomers = {}
+queueCustomers = []
+print("Customers in line and their order:")
+for iCount in range(0, 100) :
+    oCustomer = Customer()
+    queueCustomers.append(oCustomer)
+ 
+dctCustomers = {}
 
