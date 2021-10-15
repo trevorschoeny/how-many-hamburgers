@@ -29,4 +29,4 @@ class Customer(Person) :
     # Gives Customer a name and an Order
     def __init__(self) :
         super().__init__()
-        order = Order()
+        self.order = Order()
