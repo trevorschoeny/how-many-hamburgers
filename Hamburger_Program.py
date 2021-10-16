@@ -25,3 +25,10 @@ for iCount in range(0, 100) :
 
     # add the customer object with name and number of burgers to the queue
     queueCustomers.append(oCust)
+
+listSortedCustomers = sorted(dictCustomers.items(), key=lambda x: x[1], reverse=True)
+
+print("")
+for iCount in listSortedCustomers :
+    print(iCount[0].ljust(21) + str(iCount[1]))
+print("")

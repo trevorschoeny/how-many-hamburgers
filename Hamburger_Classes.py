@@ -21,7 +21,7 @@ class Person() :
     
     # Returns a random name
     def randomName(self) :
-        asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swoardsman", "Singing Bush"]
+        asCustomers = ["Jefe", "El Guapo", "Lucky Day", "Ned Nederlander", "Dusty Bottoms", "Harry Flugleman", "Carmen", "Invisible Swordsman", "Singing Bush"]
         return random.choice(asCustomers)
 
 class Customer(Person) :
